@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Receipt Generator</h1>
+        
+        <div class="commodities">
+            <h2>Enter Prices:</h2>
+            <form id="commodityForm">
+                <div class="form-group">
+                    <label for="tshirt">T-shirt:</label>
+                    <input type="number" id="tshirt" name="tshirt" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="jeans">Jeans:</label>
+                    <input type="number" id="jeans" name="jeans" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="shoes">Shoes:</label>
+                    <input type="number" id="shoes" name="shoes" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="sunglasses">Sunglasses:</label>
+                    <input type="number" id="sunglasses" name="sunglasses" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="watch">Watch:</label>
+                    <input type="number" id="watch" name="watch" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="backpack">Backpack:</label>
+                    <input type="number" id="backpack" name="backpack" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="perfume">Perfume:</label>
+                    <input type="number" id="perfume" name="perfume" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="phonecase">Phone Case:</label>
+                    <input type="number" id="phonecase" name="phonecase" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="headphones">Headphones:</label>
+                    <input type="number" id="headphones" name="headphones" min="0" step="0.01" required>
+                </div>
+                <div class="form-group">
+                    <label for="wallet">Wallet:</label>
+                    <input type="number" id="wallet" name="wallet" min="0" step="0.01" required>
+                </div>
+                <button type="submit" class="generate-button">Generate Receipt</button>
+            </form>
+        </div>
+
+        <div id="receipt" class="receipt">
+            <!-- Receipt items will be dynamically inserted here -->
+        </div>
+        
+        <div class="total">
+            <p id="totalAmount">Total Amount: $0.00</p>
+        </div>
+        
+        <p class="thanks">Thanks for your patronage.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
